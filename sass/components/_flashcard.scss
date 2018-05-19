@@ -1,0 +1,101 @@
+.c-flashcard {
+		max-width: 400px;
+		width: 100%;
+		margin: 40px;
+		border-radius: 8px;
+		border: 0;
+		background-color: $color-primary;
+		box-shadow: $shadow-primary;
+		overflow: hidden;
+
+		@include breakpoint(500px) {
+			margin: 0;
+		}
+
+		&:nth-child(2) {
+			position: absolute;
+			z-index: -1;
+			top: 3px;
+			left: 3px;
+		}
+
+		&:nth-child(3) {
+			position: absolute;
+			z-index: -2;
+			top: 6px;
+			left: 6px;
+		}
+
+		&:nth-child(4) {
+			position: absolute;
+			z-index: -3;
+			top: 9px;
+			left: 9px;
+		}
+
+		&__text-wrapper {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			max-height: 220px;
+			height: 220px;
+			padding: 40px;
+
+			@include breakpoint(500px) {
+				padding: 20px;
+				height: 160px;
+			}
+
+			&--text-center {
+				text-align: center;
+			}
+		}
+
+		&__text {
+			font-size: 20px;
+
+			@include breakpoint(500px) {
+				font-size: 18px;
+			}
+		}
+
+		&__buttons-wrapper {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			height: 150px;
+			background-color: $color-tertiary;
+
+			@include breakpoint(500px) {
+				height: 120px;
+			}
+		}
+
+		&__btn {
+			height: 100%;
+			width: 50%;
+			color: $color-primary;
+			font-size: 16px;
+			font-weight: 600;
+			background-color: $color-secondary;
+			text-transform: uppercase;
+			line-height: 17px;
+			padding: 10px;
+			border: 0;
+			outline: 0;
+
+			@include breakpoint(500px) {
+				font-size: 14px;
+			}
+
+			&:nth-child(odd) {
+				background-color: $color-tertiary;
+			}
+
+			&:hover, &:focus {
+				cursor: pointer;
+			}
+		}
+}

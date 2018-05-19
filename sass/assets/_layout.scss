@@ -1,0 +1,15 @@
+.l-app-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+}
+
+.l-deck-wrapper {
+	position: relative;
+
+	@include breakpoint(500px) {
+		margin: 20px;
+	}
+}
