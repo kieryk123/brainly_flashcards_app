@@ -4,7 +4,7 @@ Front-end developer task for summer internships built in Vanilla JS.
 
 How to use:
 1) npm install
-2) npm start
+2) gulp
 
 Data loads from JSON via fetch call. 
 
